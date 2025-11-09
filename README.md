@@ -84,7 +84,7 @@ npm install
 ```bash
 node queuectl.js hello
 ```
-![Description](./images/1.png)
+![Description](./images/1.jpg)
 
 **Expected Output:**
 
@@ -99,7 +99,7 @@ Hello from QueueCTL!
 ```bash
 node queuectl.js config get
 ```
-![Description](./images/2.png)
+![Description](./images/2.jpg)
 **Expected Default Output:**
 
 | (index)      | Value |
@@ -116,7 +116,7 @@ node queuectl.js config get
 ```bash
 node queuectl.js enqueue --command "echo Hello World" --id job1
 ```
-![Description](./images/3.png)
+![Description](./images/3.jpg)
 **Output:**
 
 ```
@@ -130,7 +130,7 @@ node queuectl.js enqueue --command "echo Hello World" --id job1
 ```bash
 node queuectl.js worker start --count 1
 ```
-![Description](./images/4.png)
+![Description](./images/4.jpg)
 **Output:**
 
 ```
@@ -147,7 +147,7 @@ node queuectl.js worker start --count 1
 ```bash
 node queuectl.js status
 ```
-![Description](./images/5.png)
+![Description](./images/5.jpg)
 **Output:**
 
 **Job Status Summary:**
@@ -164,7 +164,7 @@ node queuectl.js status
 node queuectl.js enqueue --command "invalidcmd" --id job2
 node queuectl.js worker start
 ```
-![Description](./images/6.png)
+![Description](./images/6.jpg)
 **Output:**
 
 ```
@@ -183,7 +183,7 @@ node queuectl.js worker start
 ```bash
 node queuectl.js dlq list
 ```
-![Description](./images/7.png)
+![Description](./images/7.jpg)
 **Output:**
 
 **Dead Letter Queue (1):**
@@ -199,7 +199,7 @@ node queuectl.js dlq list
 ```bash
 node queuectl.js dlq retry job2
 ```
-![Description](./images/8.png)
+![Description](./images/8.jpg)
 **Output:**
 
 ```
@@ -215,7 +215,7 @@ Stop and restart your terminal, then run:
 ```bash
 node queuectl.js status
 ```
-![Description](./images/9.png)
+![Description](./images/9.jpg)
 You’ll still see the previous jobs — data is persisted in `queue.db`.
 
 ---
@@ -229,7 +229,7 @@ node queuectl.js config set max_retries 5
 node queuectl.js config set backoff_base 2
 ```
 ---
-![Description](./images/10.png)
+![Description](./images/10.jpg)
 ## 🧠 Assumptions & Trade-offs
 
 | Area                | Decision                                | Reason                                               |
